@@ -15,9 +15,9 @@ bool isMaj(char);
 bool isMin(char);
 bool isAlpha(char);
 ```
-isMaj est une fonction qui dit si le caractère est une majuscule.
-isMin est une fonction qui dit si le caractère est une minuscule.
-isAlpha est une fonction qui dit si le caractère est une lettre de l'alphabet.
+ - isMaj est une fonction qui dit si le caractère est une majuscule.
+ - isMin est une fonction qui dit si le caractère est une minuscule.
+ - isAlpha est une fonction qui dit si le caractère est une lettre de l'alphabet.
 
 implémenter les fonctions:
 ```cpp
@@ -25,6 +25,7 @@ char sucesseur(char);
 char predecesseur(char);
 char decalerCaractere(char, int);
 ```
+
 puis
 ```cpp
 char cryptage(std::string &, int decalage);
@@ -32,3 +33,7 @@ char cryptagePairImpair(std::string &);
 char cryptagePosition(std::string &);
 char cryptagePairImpairEtPosition(std::string &);
 ```
+ - cryptage() implémente le cryptage César classique
+ - cryptagePairImpair() implémente le cryptage qui prend en compte la position du caractére César classique, si elle est pair on décale de +1 sinon on décale de -1. Soit la premiére lettre +1, la seconde -1, la troisiéme +1, etc...
+ - cryptagePosition() implémente le cryptage qui prend en compte la position du caractére César classique, on décale de + la position du caractére. Soit la premiére lettre +1, la seconde +2, la troisiéme +3, etc...
+ - cryptagePairImpairEtPosition() implémente le cryptage qui combine les deux méthode précédente. Soit la premiére lettre +1, la seconde -2, la troisiéme +3, etc...
