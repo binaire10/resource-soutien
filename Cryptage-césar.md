@@ -9,3 +9,26 @@ Realisé le cryptage César ROT13 avec un décalage de 13
 |------|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |Code  | N | O | P | Q | R | S | T | U | V | W | X | Y | Z | A | B | C | D | E | F | G | H | I | J | K | L | M |
 
+implémenter les predicats : 
+```cpp
+bool isMaj(char);
+bool isMin(char);
+bool isAlpha(char);
+```
+isMaj est une fonction qui dit si le caractère est une majuscule.
+isMin est une fonction qui dit si le caractère est une minuscule.
+isAlpha est une fonction qui dit si le caractère est une lettre de l'alphabet.
+
+implémenter les fonctions:
+```cpp
+char sucesseur(char);
+char predecesseur(char);
+char decalerCaractere(char, int);
+```
+puis
+```cpp
+char cryptage(std::string &, int decalage);
+char cryptagePairImpair(std::string &);
+char cryptagePosition(std::string &);
+char cryptagePairImpairEtPosition(std::string &);
+```
